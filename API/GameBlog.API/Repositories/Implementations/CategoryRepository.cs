@@ -1,6 +1,7 @@
 ﻿using GameBlog.API.Data;
 using GameBlog.API.Models.Domains;
 using GameBlog.API.Repositories.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace GameBlog.API.Repositories.Implementations
 {
@@ -16,6 +17,11 @@ namespace GameBlog.API.Repositories.Implementations
             await _dbContext.Categories.AddAsync(category);
             await _dbContext.SaveChangesAsync();
             return category;
+        }
+
+        public async Task<IEnumerable<Category>> GetAllAsync()
+        {
+            return await _dbContext.Categories.ToListAsync();
         }
     }
 }

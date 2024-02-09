@@ -74,3 +74,4 @@ C:\Interview Projects\GameBlog\API\GameBlog.API\obj\Debug\net7.0\refint\GameBlog
 C:\Interview Projects\GameBlog\API\GameBlog.API\obj\Debug\net7.0\GameBlog.API.pdb
 C:\Interview Projects\GameBlog\API\GameBlog.API\obj\Debug\net7.0\GameBlog.API.genruntimeconfig.cache
 C:\Interview Projects\GameBlog\API\GameBlog.API\obj\Debug\net7.0\ref\GameBlog.API.dll
+C:\Interview Projects\GameBlog\API\GameBlog.API\obj\Debug\net7.0\GameBlog.API.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GameBlog.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+124d326a8d8520a4473cbcdd24ddeff5bddf7878")]
 [assembly: System.Reflection.AssemblyProductAttribute("GameBlog.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GameBlog.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GameBlog.API.Controllers
 {
+    // https://localhost:xxxx/api/category
     [Route("api/[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
@@ -34,6 +35,22 @@ namespace GameBlog.API.Controllers
                 Name = category.Name,
                 UrlHandle = category.UrlHandle,
             };
+            return Ok(response);
+        }
+
+        //GET: https://localhost:7074/api/category
+        [HttpGet]
+        public async Task<ActionResult> GetAllCategories()
+        {
+            var categories = await _categoryRepository.GetAllAsync();
+
+            var response = categories?.Select(category => new CategoryResponseDto
+            {
+                Id = category.Id,
+                Name = category.Name,
+                UrlHandle = category.UrlHandle,
+            }).ToList();
+
             return Ok(response);
         }
     }
